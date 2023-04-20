@@ -2,7 +2,7 @@
 var times = document.getElementById('times'),
     goBtn = document.getElementById('go'),
     voteBtn = document.getElementById('vote')
-var count = window.localStorage.getItem('time')
+var count = window.localStorage.getItem('time') || 0
 times.innerText = count
 
 function sendMsgToContentScript(msg) {
