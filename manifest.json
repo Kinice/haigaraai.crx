@@ -1,0 +1,20 @@
+{  
+  "name": "haigaraai",  
+  "version": "0.0.1",
+  "description": "Anita Hailey for 77.",  
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "permissions": ["tabs"],
+  "browser_action": {
+    "default_icon": "icon.png" ,
+    "default_title": "Anita Hailey",
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+  	{
+  		"matches": ["<all_urls>"],
+  		"js": ["content-script.js"],
+  		"run_at": "document_idle"
+  	}
+  ]
+} 
