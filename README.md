@@ -4,18 +4,6 @@
 ## 安装
 
 * 克隆此项目到电脑
-
-  ```
-  git clone [this repository]
-  ```
-
-  或者下载最新版本zip包 [# haigaraai.crx
-灰原哀投票，有时效性的插件
-
-## 安装
-
-* 克隆此项目到电脑
-
   ```
   git clone [this repository]
   ```
