@@ -1,7 +1,8 @@
 // Elements
 var times = document.getElementById('times'),
     goBtn = document.getElementById('go'),
-    voteBtn = document.getElementById('vote')
+    voteBtn = document.getElementById('vote'),
+    input = document.getElementById('code')
 var count = window.localStorage.getItem('time') || 0
 times.innerText = count
 
@@ -32,5 +33,8 @@ chrome.runtime.onMessage.addListener(function(req, sender, sendRes) {
         count ++
         window.localStorage.setItem('time', count)
         times.innerText = count
+    }
+    if (req === 'code') {
+        sendRes(input.value)
     }
 })
